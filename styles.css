@@ -2,15 +2,16 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Header */
 header {
   background: linear-gradient(to right, #2c3e50, #3498db);
   color: white;
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -23,17 +24,24 @@ header p {
   font-size: 1.2em;
 }
 
+/* Logo */
+.logo {
+  display: block;
+  max-width: 180px;
+  margin: 0 auto 20px;
+}
+
 /* Section umum */
 section {
-  padding: 40px 20px;
-  max-width: 1000px;
+  padding: 50px 20px;
+  max-width: 1200px;
   margin: auto;
 }
 
 h2 {
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 30px;
+  font-size: 2.2em;
+  margin-bottom: 40px;
   color: #2c3e50;
 }
 
@@ -46,11 +54,16 @@ h2 {
 }
 
 .gallery img {
-  width: 300px;
-  height: 200px;
+  width: 280px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* Tombol filter */
@@ -59,7 +72,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .filter-buttons button {
@@ -79,8 +92,8 @@ h2 {
 
 /* Item portofolio */
 .portfolio-items {
-  display: none;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
   margin-top: 20px;
 }
@@ -91,7 +104,12 @@ h2 {
   padding: 15px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
 }
 
 .portfolio-item img {
@@ -106,20 +124,18 @@ h2 {
   color: #2c3e50;
 }
 
-/* Logo */
-.logo {
-  display: block;
-  max-width: 200px;
-  margin: 0 auto 20px;
-}
-
 /* Paket harga */
 .paket {
   background-color: white;
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.paket:hover {
+  transform: translateY(-3px);
 }
 
 .paket h3 {
@@ -151,71 +167,62 @@ footer a:hover {
 }
 
 /* RESPONSIVE DESIGN */
-
-/* Untuk layar max 768px (tablet dan smartphone besar) */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2.2em;
   }
-  
+
   header p {
     font-size: 1em;
   }
-  
+
   .gallery img {
     width: 100%;
     max-width: 300px;
     height: auto;
   }
 
-  .filter-buttons button {
-    padding: 8px 14px;
-    font-size: 0.9em;
+  .portfolio-items {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
-  .portfolio-items {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  .filter-buttons button {
+    padding: 8px 16px;
+    font-size: 0.95em;
   }
 
   .paket {
-    padding: 15px;
+    padding: 20px;
   }
 }
 
-/* Untuk layar max 480px (smartphone kecil) */
 @media (max-width: 480px) {
   header {
     padding: 30px 15px;
   }
-  
+
   header h1 {
     font-size: 1.8em;
   }
-  
+
   header p {
     font-size: 0.9em;
   }
 
   section {
-    padding: 20px 15px;
+    padding: 30px 15px;
   }
 
   .gallery {
     gap: 10px;
   }
 
-  .gallery img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
   .filter-buttons {
-    gap: 8px;
+    gap: 10px;
   }
 
   .filter-buttons button {
-    padding: 7px 10px;
+    padding: 7px 12px;
     font-size: 0.85em;
   }
 
