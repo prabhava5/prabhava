@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prabhava Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Selamat Datang di Prabhava</h1>
+    <p>Solusi perencanaan dan konstruksi dengan sentuhan estetika dan profesionalitas.</p>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Prabhava</h2>
+    <p class="intro-text">
+      Kami siap membantu membangun impian Anda mulai dari rumah tinggal, fasilitas umum, hingga bangunan ikonik dengan desain mewah dan fungsional.
+    </p>
+    <div class="gallery">
+      <img src="klasik1.png" alt="Desain Rumah Industrial" />
+      <img src="industrial1.png" alt="Rumah Sakit Modern" />
+      <img src="cafe tropis1.png" alt="Pendopo Tradisional" />
+      <img src="rs1.png" alt="Tugu Kota" />
+      <img src="pendopo1.png" alt="Tugu Kota" />
+      <img src="tugu1.png" alt="Tugu Kota" />
+    
+    </div>
+  </section>
+
+  <section id="portofolio">
+    <h2>Portofolio Kami</h2>
+    <div class="filter-buttons" role="group" aria-label="Filter Portofolio">
+      <button onclick="tampilkan('industrial')">Desain Industrial</button>
+      <button onclick="tampilkan('klasik')">Desain Klasik</button>
+      <button onclick="tampilkan('pemerintah')">Bangunan Pemerintah</button>
+      <button onclick="tampilkan('monumen')">Monumen & Landmark</button>
+      <button onclick="tampilkan('retail')">Butik & Retail</button>
+      <button onclick="tampilkan('ruko')">Ruko & Komersial</button>
+      <button onclick="tampilkan('gudang')">Gudang Fungsional</button>
+      <button onclick="tampilkan('media')">Media & Pusat Informasi</button>
+    </div>
+
+    <div id="hasilPortofolio" class="portfolio-items" aria-live="polite"></div>
+  </section>
+
+  <section id="tentang-kami">
+    <h2>Tentang Kami</h2>
+    <img src="logo.png" alt="Logo Prabhava Studio" class="logo" />
+    <p>Kami hadir sebagai mitra yang andal dalam perencanaan, pengawasan, dan pelaksanaan proyek konstruksi, baik skala kecil maupun besar.Dengan mengutamakan ketepatan waktu, efisiensi biaya, dan kualitas hasil bangunan, PRABHAVA berkomitmen untuk memberikan solusi yang terencana dan terukur dalam setiap proyek yang kami tangani. Mulai dari desain awal, manajemen pelaksanaan, hingga penyelesaian akhir, kami selalu mengedepankan profesionalitas dan kepuasan klien.
+</p>
+  </section>
+
+  <section id="beranda">
+    <h2>Klien Kami</h2>
+    <p class="intro-text">
+      sementara
+    </p>
+<section class="galeri-industrial">
+  <div class="card-gambar">
+    <img src="bupati situbodo.jpg" alt="Bersama Bupati Situbondo" />
+    <h3>Bersama Bupati Situbondo</h3>
+  </div>
+  <div class="card-gambar">
+    <img src="bupati lumajang.jpg" alt="Bersama Bupati Lumajang" />
+    <h3>Bersama Bupati Lumajang</h3>
+  </div>
+  <div class="card-gambar">
+    <img src="polres situbondo.jpg" alt="Bersama Polres Situbondo" />
+    <h3>Bersama Polres Situbondo</h3>
+  </div>
+    <div class="card-gambar">
+    <img src="proyek apr.jpeg" alt="Proyek APR Angkasa Pura Denpasar" />
+    <h3>Proyek APR Angkasa Pura Denpasar</h3>
+  </div>
+</section>
+
+  <section id="Paket 25 Ribu">
+    <h2>Paket Harga</h2>
+    <div class="paket">
+      <h3>Paket Promo 25 ribu</h3>
+      <ul>
+        <li>Gratis konsultasi</li>
+        <li>Revisi sampai deal</li>
+        <li>Desain denah + tampak</li>
+        <li>Estimasi biaya kasar</li>
+      </ul>
+    </div>
+    <div class="Paket 35 Ribu">
+      <h3>Paket Standar 35 ribu</h3>
+      <ul>
+        <li>Semua dari Paket Promo</li>
+        <li>Gambar kerja lengkap</li>
+        <li>RAB lengkap</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="formulir">
+  <h2>Formulir Konsultasi</h2>
+  <form id="waForm">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required />
+
+    <label for="alamat">Alamat:</label>
+    <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+    <label for="nomor">Nomor WhatsApp:</label>
+    <input type="text" id="nomor" name="nomor" required />
+
+    <button type="submit">Kirim ke WhatsApp</button>
+  </form>
+</section>
+
+  <footer>
+    <p>Hubungi Kami:</p>
+    <a href="https://wa.me/6281234567890" target="_blank" aria-label="WhatsApp Prabhava Studio"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/prabhava.studio" target="_blank" aria-label="Instagram Prabhava Studio"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/@prabhava.studio" target="_blank" aria-label="TikTok Prabhava Studio"><i class="fab fa-tiktok"></i></a>
+    <p>&copy; 2025 Prabhava</p>
+  </footer>
+
+  <script>
+    const dataPortofolio = {
+      
+      industrial: [
+        { judul: "", gambar: "industrial1.1.jpg" },
+        { judul: "Gaya Industrial Modern", gambar: "industrial1.2.jpg" },
+        { judul: "", gambar: "industrial1.1.jpg" },
+
+        { judul: "", gambar: "industrial2.1.jpg" },
+        { judul: "Gaya Industrial Tropis", gambar: "industrial2.2.jpg" },
+        { judul: "", gambar: "industrial2.3.jpg" },
+
+        { judul: "", gambar: "industrial3.2.jpeg" },
+        { judul: "Gaya Modern Tropis Dengan Sentuhan Industri Minimalis", gambar: "industrial3.1.jpeg" },
+        { judul: "", gambar: "industrial3.3.jpeg" },
+      
+      ],
+
+      klasik: [
+        {judul: "", gambar: "klasik2.jpeg" },
+        {judul: "Hunian Klasik Perpaduan Gaya Eropa", gambar: "klasik1.png" },
+        {judul: "", gambar: "klasik3.jpeg" },
+         
+         
+        ],
+
+      minimalis: [{ judul: "Rumah Minimalis", gambar: "https://via.placeholder.com/300x200?text=Minimalis+1" }],
+
+      pemerintah: [{ judul: "", gambar: "pendopo2.png" },
+        { judul: "Pendopo Aryo Situbondo", gambar: "pendopo1.png" },
+        { judul: "", gambar: "pendopo3.png" },
+
+        { judul: "", gambar: "polres2.jpg" },
+        { judul: "Polres Situbondo", gambar: "polres1.jpg" },
+        { judul: "", gambar: "polres3.jpg" },
+
+        { judul: "", gambar: "rs2.png" },
+        { judul: "Rumah Sakit Permata Keluarga", gambar: "rs1.png" },
+        { judul: "", gambar: "rs3.png" },
+
+      
+      ],
+
+      monumen: [
+        { judul: "", gambar: "tugu2.png" },
+        { judul: "Tugu Perbatasan Situbondo-Lumajang", gambar: "tugu1.png" },
+        { judul: "", gambar: "tugu3.jpg" },
+
+      ],
+
+
+      retail: [
+        { judul: "", gambar: "butikkecantikan1.jpeg" },
+        { judul: "Butik Kecantikan", gambar: "butikkecantikan2.jpeg" },
+        { judul: "", gambar: "butikkecantikan3.jpeg" },
+      ],
+
+      ruko: [
+        { judul: "", gambar: "ruko2.png" },
+        { judul: "Ruko Modern Fungsional", gambar: "ruko1.png" },
+        { judul: "", gambar: "ruko3.png" },
+      ],
+
+      gudang: [
+        { judul: "", gambar: "gudang2.png" },
+        { judul: "Gudang Modern Fungsional", gambar: "gudang1.png" },
+        { judul: "", gambar: "gudang3.png" },
+
+      ],
+      
+      media: [
+      { judul: "", gambar: "mc1.jpeg" },
+      { judul: "Media Center Polres Situbondo", gambar: "mc3.jpeg" },
+      { judul: "", gambar: "mc2.jpeg" },
+      ],
+    };
+
+    
+
+    function tampilkan(kategori) {
+      const container = document.getElementById("hasilPortofolio");
+      container.innerHTML = "";
+      container.style.display = "grid";
+
+      dataPortofolio[kategori].forEach(item => {
+        const div = document.createElement("div");
+        div.className = "portfolio-item";
+        div.innerHTML = `<img src="${item.gambar}" alt="${item.judul}"><h4>${item.judul}</h4>`;
+        container.appendChild(div);
+      });
+    }
+    
+  </script>
+<script>
+  document.getElementById("waForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const alamat = document.getElementById("alamat").value;
+    const nomor = document.getElementById("nomor").value;
+
+    const pesan = `Halo Prabhava Studio,%0ASaya ingin konsultasi:%0A%0ANama: ${nama}%0AAlamat: ${alamat}%0ANomor WA: ${nomor}`;
+    const noTujuan = "62881027068347"; // Ganti ini dengan nomor WhatsApp tujuan kamu
+
+    const url = `https://wa.me/${noTujuan}?text=${pesan}`;
+    window.open(url, "_blank");
+  });
+</script>
+
+
+
+
+</body>
+</html>
